@@ -10,6 +10,9 @@ export class GameSavingLoader {
                     .then(value => {
                     return resolve(JSON.parse(value))
                     })
+                    .catch(error => {
+                        throw new Error(error);
+                    })
             }, 1000)
             
         })
