@@ -2,7 +2,7 @@ import { GameSavingLoader } from "../gameSaving";
 
 jest.setTimeout(10000)
 
-test('Loading data', async (done) => {
+test('Loading data', async () => {
   const data = await GameSavingLoader.load();
   const result = {
     id: 9,
